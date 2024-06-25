@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReadApps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="on-nav" href="#"><h1 class="logo">ReadOX</h1></a>
+      <form class="search-form">
+        <input type="text" id="searchInput" placeholder="Search...">
+      </form>
+      <a href="#" class="button">Back</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="boxes">
+      <!-- Boxes will be dynamically generated here -->
+      <div class="box">
+        <img src="image1.jpg" alt="Image 1">
+        <h2>Title 1</h2>
+        <span class="info-icon">&#9432;</span>
+      </div>
+      <div class="box">
+        <img src="image2.jpg" alt="Image 2">
+        <h2>Title 2</h2>
+        <span class="info-icon">&#9432;</span>
+      </div>
+      <div class="box">
+        <img src="image3.jpg" alt="Image 3">
+        <h2>Title 3</h2>
+        <span class="info-icon">&#9432;</span>
+      </div>
+      <!-- Add more boxes as needed -->
+    </section>
+  </main>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <img id="popupImage" src="" alt="Popup Image">
+      <h2 id="popupTitle">Popup Title</h2>
+      <p id="popupDescription">Popup Description</p>
+      <a id="popupLink" href="#" class="popup-link">Download</a>
+    </div>
+  </div>
+
+  <!-- Background Animation -->
+  <div class="background-animation">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
